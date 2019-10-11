@@ -1,3 +1,24 @@
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 li {
   color: green;
+}
+
+header {
+  text-align: center;
+  display: block;
+
+}
+header img {
+  max-height: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-body {
+
 }
