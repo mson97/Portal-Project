@@ -10,8 +10,8 @@ li {
 header {
   text-align: center;
   display: block;
-
 }
+
 header img {
   max-height: 10em;
   display: block;
@@ -20,5 +20,10 @@ header img {
 }
 
 .panel-body {
+  display: block;
+  
+}
 
+footer {
+  text-align: center;
 }
