@@ -6,52 +6,64 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-  
+
   <title>DES117 Portal</title>
 </head>
 
-<body class="panel">
-  <div id="container">
+<body>
+  <div class="grid-container">
 
-    <header>
-      <h1> DES117: Interactive Media <br>
-        <img src="images/header.JPG" alt="header">
-      </h1>
+    <header class="grid-item grid-full-row" id="griditem1">
+        <img src="images/header.png" alt="header">
     </header>
-    
-    <section id="projects" class="panel panel-body">
+
+      <div class="cards">
+    <section id="projects" class="grid-item grid-third-row">
       <div class="panel-label">
-        <h2>Major Projects</h2>
+        <h3>🗃 PROJECTS</h3>
       </div>
 
       <ol>
-        <li><a href="index.html">Project 1: Portal Project</a></li>
-        <li><a href="projects/blog/index.html">Project 2: Blog</a></li>
-        <li><a href="projects/portfolio/index.html">Project 3: Portfolio</a></li>
+        <li>
+          <a href="index.html">Portal Project</a>
+        <img src="images/portal.png" alt="portal-page">
+      </li>
+
+        <li>
+          <a href="projects/blog/index_blog.html">Blog</a>
+        <img src="images/blog.png" alt="blog-page">
+      </li>
+
+        <li><a href="projects/portfolio/index_portfolio.html">Portfolio</a></li>
       </ol>
 
     </section>
-    
-    <section id="exercises" class="panel panel-body">
+
+    <section id="exercises" class="grid-item grid-third-row">
       <div class="panel-label">
-        <h2>Exercises</h2>
+        <h3>✏️ EXERCISES</h3>
       </div>
 
       <ol>
-        <li><a href="exercises/ex_1.html">Exercise 1: History of Internet Art</a></li>
-        <li><a href="exercises/ex_2">Exercise 2: HTML Semantic Markup</a></li>
-        <li><a href="exercises/ex_3.html">Exercise 3: CSS Colorize Selector</a></li>
+        <li><a href="exercises/ex_1.html">Ex 1: History of Internet Art</a></li>
+        <li><a href="exercises/ex_2">Ex 2: HTML Semantic Markup</a></li>
+        <li><a href="exercises/ex_3.html">Ex 3: CSS Colorize Selector</a></li>
+        <li><a href="exercises/ex_5.html">Ex 5: Web Font Style Tile</a></li>
+        <li><a href="#">Ex 6: Midterm Challenges</a></li>
+        <li><a href="#">Ex 7: CSS Grid One Page Layout</a></li>
       </ol>
 
     </section>
-    
-    <aside id="useful-links" class="panel panel-body">
+
+    <aside id="useful-links" class="grid-item grid-third-row">
       <div class="panel-label">
-        <h2>Useful Links</h2>
+        <h3>🔗 LINKS</h3>
       </div>
-      <ul>
-        <li><h3>Useful Tools</h3>
+
+        <h4>Useful Tools</h4>
 
           <ul>
             <li><a href="http://wbwip.com/wbw/emailencoder.html">Encode Email Addresses</a></li>
@@ -59,9 +71,8 @@
             <li><a href="https://www.cssfontstack.com/">CSS Font Stack</a></li>
           </ul>
 
-        </li>
-        
-        <li><h3>Useful Websites</h3>
+
+        <h4>Useful Websites</h4>
 
           <ul>
             <li><a href="https://www.w3schools.com/">w3schools</a></li>
@@ -69,18 +80,24 @@
             <li><a href="https://www.gloomaps.com/">Gloomaps</a></li>
           </ul>
 
-        </li>
-      </ul>
     </aside>
+      </div>
 
-    <footer class="panel-footer ">
-      <p><strong>Minhee Son</strong></p>
-      <p>Contact: <a href="mailto:&#109;&#104;&#115;&#111;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">
+    <footer class="grid-item grid-full-row" id="griditem5">
+      <div class="left">
+      <p><strong>👩🏻‍💻 M I N H E E &nbsp; S O N </strong></p>
+      <p>📧 C O N T A C T : <a href="mailto:&#109;&#104;&#115;&#111;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">
         &#109;&#104;&#115;&#111;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
-        <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
+      </div>
+        <div class="right">
+          <p>D A V I S, &nbsp; C A 🐮</p>
+          <p><a href="http://validator.w3.org/check?uri=referer">Made with HTML & CSS</a></p>
+        </div>
       </footer>
 
+
     </div>
-    
+
+
   </body>
   </html>

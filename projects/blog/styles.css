@@ -1,0 +1,158 @@
+
+/*Sets the width of the overall page container div
+to 90% of viewport width and margin:auto centers the page
+in the middle of the browser no matter how wide you stretch the browser*/
+.pagecontainer {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1a202c;
+
+}
+@media (min-width: 0) {
+  .pagecontainer {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .pagecontainer {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pagecontainer {
+    width: 70vw;
+  }
+}
+
+header {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fa877f;
+  padding: 1rem 1em 1rem 1rem;
+  text-align: center;
+  height: 8em;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+h3, h2, h4 {
+  color: #bd574e;
+}
+
+h6 {
+  color: dimgray;
+  font-style: italic;
+}
+/*Unordered list in the navbar is set to display flex with wrapping
+so at smaller size-mobile width--it wraps vertically in a row
+and at larger screen widths it spreads more horizontally.
+And justify-content centers flex blox content*/
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 0.5rem;
+}
+
+/*Sets background color of nav list elements and their width and height*/
+nav ul li {
+  background: white;
+  height: 3em;
+  width: 10rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.3rem;
+  border-radius: 10px;
+
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav ul li:hover{
+  background: #ffad87;
+  border: none;
+}
+/*Takes away the default underlining of links and sets color of menu font*/
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #bd574e;
+}
+
+nav ul li:hover a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Active psuedoclass is used so When you click on a menu item it turns orange.*/
+nav ul li:active {
+  background: #bd574e;
+}
+
+/*This class should be applied to html differently on each page to let user know
+which page you are on--in this case the home page*/
+.locationmarker {
+  background: #fa877f;
+  border: none;
+}
+
+.locationmarker a {
+  color: white;
+}
+
+.image {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0.6rem 0.6rem 0.6rem 0.6rem;
+  border-radius: 8px;
+  transition: .5s ease;
+}
+
+.image:hover {
+  opacity: 0.3;
+}
+
+article {
+  padding-top: 2rem;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: transparent;
+  padding: 2rem;
+  text-align: center;
+  color: #fa877f;
+}
+
+
+a {
+  color: #4299e1;
+  display: block;
+}
+
+a:hover {
+  color: #ffad87;
+}
+
+.nav-return {
+  padding-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+}
+
+#link2 {
+  text-align: right;
+}
